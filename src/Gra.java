@@ -1,6 +1,7 @@
 import java.util.Arrays;
 
 public class Gra {
+    private static int nextId = 1;
     private int id;
     private String tytul;
     private String developer;
@@ -8,7 +9,7 @@ public class Gra {
     private String[] gatunki;
 
     public Gra(int id, String tytul, String developer, double cena, String[] gatunki) {
-        this.id = id;
+        this.id = nextId++;
         this.tytul = tytul;
         this.developer = developer;
         this.cena = cena;
