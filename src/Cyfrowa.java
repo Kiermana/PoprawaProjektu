@@ -8,6 +8,8 @@ public class Cyfrowa extends Gra{
 
     @Override
     public String toString() {
+
+        //Dzięki super.toString() nie trzeba wypisywac na nowo całego toString tylko można wykorzystać go z klasy Gra i rozszerzyć go o platformę
         return super.toString() +
                 "platforma=' " + platforma + '\'' +
                 '}';
