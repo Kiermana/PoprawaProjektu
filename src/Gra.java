@@ -8,7 +8,7 @@ public class Gra {
     private double cena;
     private String[] gatunki;
 
-    public Gra(int id, String tytul, String developer, double cena, String[] gatunki) {
+    public Gra(String tytul, String developer, double cena, String[] gatunki) {
         this.id = nextId++;
         this.tytul = tytul;
         this.developer = developer;
@@ -17,7 +17,7 @@ public class Gra {
     }
 
     public Gra(int id, String tytul){
-        this(id, tytul, "Nieznany", 25.0, new String[]{"Inny"});
+        this(tytul, "Nieznany", 25.0, new String[]{"Inny"});
     }
 
     public String getRodzaj(){

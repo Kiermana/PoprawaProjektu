@@ -8,8 +8,8 @@ public class Cyfrowa extends Gra{
 
     @Override
     public String toString() {
-        return "Cyfrowa{" +
-                "platforma='" + platforma + '\'' +
+        return super.toString() +
+                "platforma=' " + platforma + '\'' +
                 '}';
     }
 }

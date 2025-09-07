@@ -8,8 +8,8 @@ public class Pudelkowa extends Gra{
 
     @Override
     public String toString() {
-        return "Pudelkowa{" +
-                "edycja='" + edycja + '\'' +
+        return super.toString() + "Pudelkowa{" +
+                "edycja=' " + edycja + '\'' +
                 '}';
     }
 }
