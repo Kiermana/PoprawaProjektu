@@ -8,6 +8,7 @@ public class Gra {
     private double cena;
     private String[] gatunki;
 
+    //Konstruktor główny
     public Gra(String tytul, String developer, double cena, String[] gatunki) {
         this.id = nextId++;
         this.tytul = tytul;
@@ -16,10 +17,13 @@ public class Gra {
         this.gatunki = gatunki;
     }
 
+    //Konstruktor przeciążony
     public Gra(int id, String tytul){
         this(tytul, "Nieznany", 25.0, new String[]{"Inny"});
     }
 
+
+    //Gettery oraz setter ceny aby nie można było przyjąć wartości ujemnej
     public String getRodzaj(){
         return "Ogólny";
     }
