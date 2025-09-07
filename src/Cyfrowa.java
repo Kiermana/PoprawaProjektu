@@ -1,8 +1,8 @@
 public class Cyfrowa extends Gra{
     private String platforma;
 
-    public Cyfrowa(int id, String tytul, String developer, double cena, String[] gatunki, String platforma) {
-        super(id, tytul, developer, cena, gatunki);
+    public Cyfrowa(String tytul, String developer, double cena, String[] gatunki, String platforma) {
+        super(tytul, developer, cena, gatunki);
         this.platforma = platforma;
     }
 

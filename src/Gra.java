@@ -1,22 +1,24 @@
 import java.util.Arrays;
 
 public class Gra {
+    private static int nextId = 1;
+
     private int id;
     private String tytul;
     private String developer;
     private double cena;
     private String[] gatunki;
 
-    public Gra(int id, String tytul, String developer, double cena, String[] gatunki) {
-        this.id = id;
+    public Gra(String tytul, String developer, double cena, String[] gatunki) {
+        this.id = nextId++;
         this.tytul = tytul;
         this.developer = developer;
         this.cena = cena;
         this.gatunki = gatunki;
     }
 
-    public Gra(int id, String tytul){
-        this(id, tytul, "Nieznany", 25.0, new String[]{"Inny"});
+    public Gra(String tytul){
+        this(tytul, "Nieznany", 25.0, new String[]{"Inny"});
     }
 
     public String getRodzaj(){
