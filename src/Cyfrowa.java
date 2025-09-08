@@ -7,11 +7,14 @@ public class Cyfrowa extends Gra{
     }
 
     @Override
-    public String toString() {
-
-        //Dzięki super.toString() nie trzeba wypisywac na nowo całego toString tylko można wykorzystać go z klasy Gra i rozszerzyć go o platformę
-        return super.toString() +
-                "platforma=' " + platforma + '\'' +
+   public String toString() {
+        return "Cyfrowa{" +
+                "id=" + getId() +
+                ", tytul='" + getTytul() + '\'' +
+                ", developer='" + getDeveloper() + '\'' +
+                ", cena=" + getCena() +
+                ", gatunki=" + Arrays.toString(getGatunki()) +
+                ", platforma='" + platforma + '\'' +
                 '}';
     }
 }
