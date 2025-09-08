@@ -59,9 +59,19 @@ public class Menu {
         System.out.println("Producent: ");
         String developers = scanner.nextLine();
 
-        System.out.println("Cena: ");
-        double cena = Double.parseDouble(scanner.nextLine());
-
+        double cena = -1;
+        while (cena < 0) {
+            System.out.print("Cena: ");
+            try {
+                cena = scanner.nextDouble();
+                if (cena < 0) {
+                    System.out.println("Blad: podana cena jest ujemna.");
+                }
+            } catch (InputMismatchException e) {
+                System.out.println("Blad: nie zostala podana liczba.");
+                scanner.nextLine();
+            }
+        }
         System.out.println("Podaj gatunki (oddziel je znakiem ,): ");
         String[] gatunki = scanner.nextLine().split(",");
 
