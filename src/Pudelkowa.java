@@ -6,8 +6,7 @@ public class Pudelkowa extends Gra{
         this.edycja = edycja;
     }
 
-    //Tak samo jak w klasie cyfrowa, została użyta komenda super.toString aby kod został zoptymalizowany i zamiast pisać od nowa cały toString zostaje wykorzystany on z klasy Gra i są dodane do niego tylko informacje o edycji gry
-    @Override
+
    public String toString() {
         return "Pudelkowa{" +
                 "id=" + getId() +
